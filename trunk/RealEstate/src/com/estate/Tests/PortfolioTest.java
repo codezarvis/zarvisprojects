@@ -13,6 +13,7 @@ public class PortfolioTest {
 
 	public static void main(String[] args) {
 		Portfolio portfolio = null;
+		PortfolioService portfolioService = null;
 		int choice = 0;
 		int option;
 		do {
@@ -44,7 +45,7 @@ public class PortfolioTest {
 
 				addressList.add(address1);
 				portfolio.setAddressList(addressList);
-				PortfolioService portfolioService = new PortfolioServiceImpl();
+				portfolioService = new PortfolioServiceImpl();
 
 				portfolioService.create(portfolio);
 
@@ -52,9 +53,9 @@ public class PortfolioTest {
 				break;
 
 			case 2:
-				PortfolioService portfolioService2 = new PortfolioServiceImpl();
+				
 
-				List<Portfolio> portfolioList = portfolioService2.getAll();
+				List<Portfolio> portfolioList = portfolioService.getAll();
 
 				for (int i = 0; i < portfolioList.size(); i++) {
 					Portfolio portfolio1 = portfolioList.get(i);
