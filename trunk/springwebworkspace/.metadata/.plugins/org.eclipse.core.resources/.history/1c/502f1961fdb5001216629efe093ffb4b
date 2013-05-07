@@ -1,0 +1,9 @@
+package com.domain;
+
+public interface Login {
+
+	
+	void setUserName(String userName);
+	
+	String getUserName();
+}
