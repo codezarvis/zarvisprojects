@@ -1,0 +1,13 @@
+package com.domain;
+
+public interface Login {
+
+	public abstract String getUserName();
+
+	public abstract void setUserName(String userName);
+
+	public abstract String getPassword();
+
+	public abstract void setPassword(String password);
+
+}
