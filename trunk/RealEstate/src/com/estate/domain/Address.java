@@ -1,58 +1,42 @@
 package com.estate.domain;
 
 public class Address {
-	
-	private String dno;
-	private String street;
-	private String area;
-	private String city;
-	private String state;
-	private String pinCode;
-	private String pNo;
-	
-	public String getDno() {
-		return dno;
-	}
-	public void setDno(String dno) {
-		this.dno = dno;
-	}
-	public String getStreet() {
-		return street;
-	}
-	public void setStreet(String street) {
-		this.street = street;
-	}
-	public String getArea() {
-		return area;
-	}
-	public void setArea(String area) {
-		this.area = area;
-	}
-	public String getCity() {
-		return city;
-	}
-	public void setCity(String city) {
-		this.city = city;
-	}
-	public String getState() {
-		return state;
-	}
-	public void setState(String state) {
-		this.state = state;
-	}
-	public String getPinCode() {
-		return pinCode;
-	}
-	public void setPinCode(String pinCode) {
-		this.pinCode = pinCode;
-	}
-	public String getpNo() {
-		return pNo;
-	}
-	public void setpNo(String pNo) {
-		this.pNo = pNo;
-	}
-	
-	
 
+	private String line1;
+	private String line2;
+	private String line3;
+	private String pin;
+	private String pno;
+	
+	public String getLine1() {
+		return line1;
+	}
+	public void setLine1(String line1) {
+		this.line1 = line1;
+	}
+	public String getLine2() {
+		return line2;
+	}
+	public void setLine2(String line2) {
+		this.line2 = line2;
+	}
+	public String getLine3() {
+		return line3;
+	}
+	public void setLine3(String line3) {
+		this.line3 = line3;
+	}
+	public String getPin() {
+		return pin;
+	}
+	public void setPin(String pin) {
+		this.pin = pin;
+	}
+	
+	public String getPno() {
+		return pno;
+	}
+	public void setPno(String pno) {
+		this.pno = pno;
+	}	
 }

@@ -1,20 +1,19 @@
 package com.estate.domain;
 
-import java.util.List;
+import java.io.InputStream;
 
 public class Portfolio {
-
-	private String pid;
+	private	String pId;
 	private String propertyType;
 	private String propertyCategory;
-	private List<Address> addressList;
+	private Address address;
 	private String areaSize;
-	
-	public String getPid() {
-		return pid;
+	private InputStream sitePic;
+	public String getpId() {
+		return pId;
 	}
-	public void setPid(String pid) {
-		this.pid = pid;
+	public void setpId(String pId) {
+		this.pId = pId;
 	}
 	public String getPropertyType() {
 		return propertyType;
@@ -28,11 +27,11 @@ public class Portfolio {
 	public void setPropertyCategory(String propertyCategory) {
 		this.propertyCategory = propertyCategory;
 	}
-	public List<Address> getAddressList() {
-		return addressList;
+	public Address getAddress() {
+		return address;
 	}
-	public void setAddressList(List<Address> addressList) {
-		this.addressList = addressList;
+	public void setAddress(Address address) {
+		this.address = address;
 	}
 	public String getAreaSize() {
 		return areaSize;
@@ -40,6 +39,10 @@ public class Portfolio {
 	public void setAreaSize(String areaSize) {
 		this.areaSize = areaSize;
 	}
-	
-	
+	public InputStream getSitePic() {
+		return sitePic;
+	}
+	public void setSitePic(InputStream sitePic) {
+		this.sitePic = sitePic;
+	}		
 }
