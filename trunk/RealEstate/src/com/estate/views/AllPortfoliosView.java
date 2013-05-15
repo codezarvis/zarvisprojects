@@ -31,14 +31,18 @@ public class AllPortfoliosView extends JFrame {
 		setLayout(new BorderLayout());
 		tablePanel = new JPanel();
 		
+		System.out.println(plist);
+		
 		String[] columnNames = {"Pid","PorpertyType","ProperyCategory","AreaSize","Address1", "Address2", "Address3","Pin","PhoneNo"}; 
 		model = new DefaultTableModel(columnNames, 0);
 		
 		
 		jTable.setModel(model);
+		jTable.setRowHeight(100);
+	
 		jTable.setAutoCreateColumnsFromModel(true);
 		
-		//model.addColumn(columnNames);
+		model.addColumn(columnNames);
 		
 		for(int i=0;i<plist.size();i++) {
 			Portfolio portfolio = plist.get(i);
@@ -56,20 +60,21 @@ public class AllPortfoliosView extends JFrame {
 			
 		}
 				
-		jTable.getColumnModel().getColumn(0).setPreferredWidth(200);
-		jTable.getColumnModel().getColumn(1).setPreferredWidth(70);
-		jTable.getColumnModel().getColumn(2).setPreferredWidth(200);
-		jTable.getColumnModel().getColumn(3).setPreferredWidth(70);
-		jTable.getColumnModel().getColumn(4).setPreferredWidth(70);
-		jTable.getColumnModel().getColumn(5).setPreferredWidth(70);
-		jTable.getColumnModel().getColumn(6).setPreferredWidth(70);
-		jTable.getColumnModel().getColumn(7).setPreferredWidth(70);
-		jTable.getColumnModel().getColumn(8).setPreferredWidth(70);
-		
-		
+//		jTable.getColumnModel().getColumn(0).setPreferredWidth(200);
+//		jTable.getColumnModel().getColumn(1).setPreferredWidth(70);
+//		jTable.getColumnModel().getColumn(2).setPreferredWidth(200);
+//		jTable.getColumnModel().getColumn(3).setPreferredWidth(70);
+//		jTable.getColumnModel().getColumn(4).setPreferredWidth(70);
+//		jTable.getColumnModel().getColumn(5).setPreferredWidth(70);
+//		jTable.getColumnModel().getColumn(6).setPreferredWidth(70);
+//		jTable.getColumnModel().getColumn(7).setPreferredWidth(70);
+//		jTable.getColumnModel().getColumn(8).setPreferredWidth(70);
+//		
+//		
 		JScrollPane jsp = new JScrollPane(jTable);
-		jsp.setPreferredSize(jTable.getSize());
+		//jsp.setPreferredSize(jTable.getSize());
 		
+		//add(jsp);
 		tablePanel.add(jsp);
 		
 		btnPanel = new JPanel();
