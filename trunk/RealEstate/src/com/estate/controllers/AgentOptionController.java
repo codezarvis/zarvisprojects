@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.List;
 
 import com.estate.domain.Portfolio;
-import com.estate.serviceImpl.PortfolioServiceImpl;
+import com.estate.service.impl.PortfolioServiceImpl;
 import com.estate.views.AgentOptions;
 import com.estate.views.AllPortfoliosView;
 import com.estate.views.PortfolioDeleteView;
