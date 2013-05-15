@@ -6,8 +6,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
 
 import com.estate.domain.Agent;
-import com.estate.serviceImpl.AgentServiceImpl;
-import com.estate.views.AgentLogin;
+import com.estate.service.impl.AgentServiceImpl;
 import com.estate.views.AgentRegistration;
 
 

@@ -7,7 +7,7 @@ import java.sql.SQLException;
 
 import javax.swing.JOptionPane;
 
-import com.estate.serviceImpl.AgentServiceImpl;
+import com.estate.service.impl.AgentServiceImpl;
 import com.estate.views.AgentLogin;
 import com.estate.views.AgentOptions;
 

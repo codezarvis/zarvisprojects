@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JOptionPane;
 
-import com.estate.serviceImpl.PortfolioServiceImpl;
+import com.estate.service.impl.PortfolioServiceImpl;
 import com.estate.views.PortfolioDeleteView;
 
 public class PortfolioDeleteController {

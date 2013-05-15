@@ -13,8 +13,8 @@ import javax.swing.JOptionPane;
 
 import com.estate.domain.Address;
 import com.estate.domain.Portfolio;
-import com.estate.serviceImpl.PortfolioServiceImpl;
-import com.estate.serviceImpl.SendMessage;
+import com.estate.service.impl.PortfolioServiceImpl;
+import com.estate.service.impl.SendMessage;
 import com.estate.views.PortfolioRegister;
 
 
