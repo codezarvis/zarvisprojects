@@ -24,7 +24,7 @@ import com.services.StudentImpl;
 					student.setSname("anu");
 					student.setS1(10);
 					student.setS2(20);
-					student.setTotal(10+20);
+					student.setTotal(student.getTotal());
 					StudentImpl impl = new StudentImpl();
 					impl.create(student);
 					
