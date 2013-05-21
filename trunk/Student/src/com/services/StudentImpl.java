@@ -18,7 +18,7 @@ public class StudentImpl implements studentService
 		try{
 	        Class.forName("com.mysql.jdbc.Driver");
 			 connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/studentdb", "root", "root");
-			 statement =  connection.prepareStatement("INSERT INTO VALUES(?,?,?,?,?)");
+			 statement =  connection.prepareStatement("INSERT INTO MARKS VALUES(?,?,?,?,?)");
 			 statement.setInt(1,student.getSno());
 			 statement.setString(2, student.getSname());
 			 statement.setInt(3, student.getS1());
