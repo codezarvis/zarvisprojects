@@ -20,7 +20,7 @@ import com.services.StudentImpl;
 			{
 				
 					Studentinfo student = new Studentinfo();
-					student.setSno(1);
+					student.setSno(2);
 					student.setSname("anu");
 					student.setS1(10);
 					student.setS2(20);
@@ -29,44 +29,29 @@ import com.services.StudentImpl;
 					impl.create(student);
 					
 		   
-//					statement.setInt(1, );
-//					statement.setString(2, );
-//					statement.setInt(3, );
-//					statement.setInt(4, );
-//					statement.setInt(5, );
-//					statement.executeUpdate();
+				
+					Studentinfo student1 = new Studentinfo();
+					student1.setSno(3);
+					student1.setSname("anusha");
+					student1.setS1(30);
+					student1.setS2(40);
+					student1.setTotal(student.getTotal());
+					StudentImpl impl1 = new StudentImpl();
+					impl1.create(student1);
 					
-//					statement.setInt(1, 102);
-//					statement.setString(2, "rani");
-//					statement.setInt(3, 60);
-//					statement.setInt(4, 50);
-//					statement.setInt(5, 60+50);
-//					statement.executeUpdate();
-//					
-//					
-//					statement.setInt(1, 103);
-//					statement.setString(2, "anu");
-//					statement.setInt(3, 50);
-//					statement.setInt(4, 40);
-//					statement.setInt(5, 50+40);
-//					statement.executeUpdate();
-//					
-//					statement.setInt(1, 104);
-//					statement.setString(2, "usha");
-//					statement.setInt(3, 60);
-//					statement.setInt(4, 50);
-//					statement.setInt(5, 60+50);
-//					statement.executeUpdate();
-//					
-//					statement.setInt(1, 105);
-//					statement.setString(2, "anisha");
-//					statement.setInt(3, 70);
-//					statement.setInt(4, 50);
-//					statement.setInt(5, 70+50);
-//					statement.executeUpdate();
-					//connection.close();
+
+					Studentinfo student2 = new Studentinfo();
+					student2.setSno(4);
+					student2.setSname("usha");
+					student2.setS1(40);
+					student2.setS2(50);
+					student2.setTotal(student.getTotal());
+					StudentImpl impl2 = new StudentImpl();
+					impl2.create(student2);
 			}
+	}
 					
+//					
 					
 //		        catch(ClassNotFoundException exception)
 //		        {
@@ -78,7 +63,7 @@ import com.services.StudentImpl;
 //				        exception.printStackTrace();
 //					
 //				        }
-			}
+			
 
 
 	
