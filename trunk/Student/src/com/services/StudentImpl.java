@@ -19,6 +19,7 @@ public class StudentImpl implements studentService
 	        Class.forName("com.mysql.jdbc.Driver");
 			 connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/studentdb", "root", "root");
 			 statement =  connection.prepareStatement("INSERT INTO MARKS VALUES(?,?,?,?,?)");
+			 System.out.println("enter the values");
 			 statement.setInt(1,student.getSno());
 			 statement.setString(2, student.getSname());
 			 statement.setInt(3, student.getS1());
@@ -33,8 +34,9 @@ public class StudentImpl implements studentService
 	}
 
 	@Override
+	
 	public List<Studentinfo> getAll(){
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 	
