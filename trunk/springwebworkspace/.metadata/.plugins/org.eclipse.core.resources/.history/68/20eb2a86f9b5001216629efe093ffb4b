@@ -1,9 +1,0 @@
-package com.web.forms;
-
-public class LoginForm {
-
-	private String userName;
-	private String password;
-	
-	
-}
